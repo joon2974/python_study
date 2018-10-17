@@ -12,7 +12,8 @@ while poll_go:
 	go_on = input("Would you like to let another people join respond? (yes / no): ")
 	
 	if go_on == 'no': 
-		break
+		poll_go = False
+print("\n")
 
 for name, place in places.items(): 
 	print(name.title() + " want's to go " + place.title())
